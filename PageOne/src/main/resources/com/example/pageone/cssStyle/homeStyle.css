@@ -1,0 +1,19 @@
+.root {
+-fx-background-image:url('../images/WhatsApp Image 2022-07-07 at 10.13.54 AM.jpeg');
+-fx-background-size:cover;
+}
+
+.table-row-cell {
+  -fx-background-color: #FBFBFB;
+  -fx-cell-size: 50px;
+  -fx-border-width:0.4px;
+  -fx-border-color:#0543ad;
+
+
+  /** Nothing else done here */
+}
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}

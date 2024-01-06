@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="639.0" style="-fx-border-radius: 30;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pageone.loginController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="400.0" prefWidth="215.0" style="-fx-background-color: #faa250;">
+         <children>
+            <Button fx:id="signUpBtn" layoutX="38.0" layoutY="341.0" mnemonicParsing="false" onAction="#signUp" prefHeight="26.0" prefWidth="140.0" style="-fx-background-color: #ed4242; -fx-padding: 8; -fx-background-radius: 10;" text="SignUp" textFill="WHITE" />
+            <ImageView fitHeight="289.0" fitWidth="200.0" layoutX="8.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/WhatsApp%20Image%202022-07-07%20at%2010.13.53%20AM%20(1).jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="214.0" prefHeight="400.0" prefWidth="424.0">
+         <children>
+            <Label layoutX="183.0" layoutY="111.0" text="Login">
+               <font>
+                  <Font name="Arial Italic" size="20.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="42.0" layoutY="171.0" prefHeight="123.0" prefWidth="350.0" style="-fx-border-image-width: 5; -fx-border-radius: 10;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="110.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="243.0" minWidth="0.0" prefWidth="240.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Username:">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label text="Password:" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="unameTxt" alignment="CENTER" style="-fx-border-radius: 7; -fx-border-color: #ff6f00; -fx-border-width: 0.4;" GridPane.columnIndex="1" />
+                  <PasswordField fx:id="pwdTxt" alignment="CENTER" style="-fx-border-width: 0.4; -fx-border-color: #ff6f00; -fx-border-radius: 7;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <Button fx:id="loginBtn" layoutX="75.0" layoutY="323.0" mnemonicParsing="false" onAction="#login" prefHeight="38.0" prefWidth="274.0" style="-fx-background-color: #614c4c; -fx-background-radius: 10;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="77.0" layoutY="55.0" text="Weclome to the Beauty Palor!" textFill="#710303">
+               <font>
+                  <Font name="Calibri" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="-7.0" prefHeight="19.0" prefWidth="431.0" style="-fx-background-color: #faa250;" />
+            <Label layoutX="-4.0" layoutY="381.0" prefHeight="19.0" prefWidth="429.0" style="-fx-background-color: #faa250;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
